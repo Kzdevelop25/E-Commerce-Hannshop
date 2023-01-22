@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
+*,html {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)) ,url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Hero Landing Page Start */
+
+.hero {
+    color: white;
+    padding-top: 8rem;
+}
+
+.title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding: .6rem;
+}
+
+.sm {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding: .6rem;
+    line-height: 1.5;
+}
+
+.red {
+    color: tomato;
+    font-weight: 700;
+}
+
+.text-header h1 {
+    max-width: 750px;
+}
+
+.text-header p{
+    max-width: 500px;
+}
+
+.start-btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.start-btn .panah {
+    transform: translateY(2px);
+    animation: down .8s ease-in infinite;
+}
+
+@keyframes down{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+
+/* Hero Landing Page End */
+
+
+
+/* Responsive Tablet */
+
+@media screen and (max-width: 768px) {
+
+    .title {
+        font-size: 30px;
+    }
+
+    .sm {
+        font-size: 15px;
+    }
+
+
+
+}
