@@ -31,25 +31,17 @@ img {
     flex-direction: row;
 }
 
+.cart-product-col {
+    max-width: 650px;
+    border-radius: 8px;
+    box-shadow: rgb(49 53 59 / 12%) 0px 1px 6px 0px;
+    background-color: white;
+}
+
 
 .cart-col {
-    /* width: 600px; */
-    background-color: white;
-    box-shadow: rgb(49 53 59 / 12%) 0px 1px 6px 0px;
-    ;
-    /* border-radius: 8px; */
     padding: 2rem;
     font-size: 16px;
-    /* border-bottom: 2px solid #254f7f; */
-}
-
-.cart-col:first-of-type{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-.cart-col:last-of-type{
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
 }
 
 .cart-product {
