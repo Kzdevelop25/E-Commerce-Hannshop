@@ -59,17 +59,21 @@ body {
     max-width: 500px;
 }
 
+.start-component {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .start-btn {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
     background-color: white;
+    width: auto;
     color: black;
     padding: 8px 24px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     border-radius: 8px;
 }
 

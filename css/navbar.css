@@ -96,7 +96,8 @@ ul li a:hover {
 }
 
 .hamburger,
-.close,.cart-mobile {
+.close,
+.cart-mobile {
     display: none;
 }
 
@@ -106,7 +107,7 @@ ul li a:hover {
 
 
 
-
+/* Responsive Tablet Start */
 
 @media screen and (max-width: 1190px) {
 
@@ -145,7 +146,7 @@ ul li a:hover {
         z-index: 2;
         padding-bottom: 5.5rem;
         position: fixed;
-        top: 11%;
+        top: 10%;
         left: 0;
         width: 100%;
         /* background: linear-gradient(rgba(255, 255, 255, .8), rgba(0, 0, 0, 9)); */
@@ -230,3 +231,5 @@ ul li a:hover {
     }
 
 }
+
+/* Responsive Tablet End */
