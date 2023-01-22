@@ -104,7 +104,6 @@ h3 {
 .remember {
     font-size: 12px;
     color: #254f7f;
-    margin-right: -30px;
 }
 
 .remember-component label {
@@ -114,7 +113,7 @@ h3 {
 label.container {
     display: block;
     top: 0;
-    left: 68%;
+    left: 100%;
     transform: translate(-50%, -50%);
     position: absolute;
     cursor: pointer;
@@ -123,7 +122,9 @@ label.container {
 
 }
 
+
 .remember-component {
+    overflow: hidden;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -208,6 +209,9 @@ form p.line::after {
 }
 
 .btn-sign {
+
+    display: flex;
+    gap: 10px;
     color: black;
     text-transform: capitalize;
     font-size: 12px;
@@ -216,7 +220,13 @@ form p.line::after {
     border: 1px solid black;
 }
 
+.btn-sign img {
+    object-fit: contain;
+}
+
 .daftar {
+    display: flex;
+    gap: 10px;
     margin: 0 auto 14px;
 }
 
@@ -249,3 +259,54 @@ form p.line::after {
 }
 
 /* Responsive Tablet End*/
+
+
+/* Responsive Hp Start*/
+
+@media screen and (max-width: 400px) and (min-width: 320px) {
+
+    form p.line::before {
+        width: 100px;
+    }
+
+    form p.line::after {
+        width: 100px;
+    }
+
+    .btn-sign {
+        color: black;
+        align-items: center;
+        text-transform: capitalize;
+        font-size: 9px;
+        padding: 12px;
+    }
+
+}
+
+@media screen and (max-width: 320px) and (min-width: 0px) {
+    .daftar {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 14px;
+        gap: 10px;
+    }
+
+    form p.line::before,
+    form p.line::after {
+        display: none;
+    }
+    .btn-sign {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        color: black;
+        text-transform: capitalize;
+        font-size: 12px;
+        padding: 12px 40px;
+    }
+}
+
+
+
+/* Responsive Hp End*/
