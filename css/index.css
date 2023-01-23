@@ -267,6 +267,14 @@ i {
     font-size: 12px;
 }
 
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    display: block;
+}
+
+
 
 @media screen and (max-width: 1135px) {
 
@@ -281,14 +289,14 @@ i {
     }
 
     .small-container::-webkit-scrollbar {
-        width: 1.5em;
-        height: 1.5em;
+        width: .8em;
+        height: .8em;
     }
 
     .small-container::-webkit-scrollbar-track {
         background-color: rgb(27, 20, 20);
         border-radius: 100vw;
-        border: 8px solid white;
+        /* border: 8px solid white; */
     }
 
     .small-container::-webkit-scrollbar-thumb {
@@ -298,7 +306,26 @@ i {
         border-radius: 100vw;
         cursor: pointer;
     }
+    
 
+}
+
+@media screen and (max-width: 768px) {
+
+    .overlay {
+        opacity: 1;
+        position: initial;
+        background-color: #333;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .categories .col-3 {
+        padding: 0;
+    }.categories img{
+        padding-left: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 
 /* Fetures Categories End */
