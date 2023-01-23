@@ -1,75 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/contact.css" />
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/dbed6b6114.js"
+      crossorigin="anonymous"
+    ></script>
     <title>HannShop</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- Headers Start -->
 
     <header class="header">
-        <nav class="navbar">
-            <a href="./index.html" class="logo"><img src="./images/logo.webp" alt="Logo" /></a>
-            <input type="checkbox" id="check">
-            <ion-icon name="reorder-two-outline" class="hamburger"></ion-icon>
+      <nav class="navbar">
+        <a href="./index.html" class="logo"
+          ><img src="./images/logo.webp" alt="Logo"
+        /></a>
+        <input type="checkbox" id="check" />
+        <ion-icon name="reorder-two-outline" class="hamburger"></ion-icon>
 
-            <div class="nav-list">
+        <div class="nav-list">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="">Produk</a></li>
+            <li><a href="">Tentang Kami</a></li>
+            <li><a href="">Kontak</a></li>
+          </ul>
 
-                <ul>
-                    <li><a href="index.html">Beranda</a></li>
-                    <li><a href="">Produk</a></li>
-                    <li><a href="">Tentang Kami</a></li>
-                    <li><a href="">Kontak</a></li>
-                </ul>
-
-                <div class="end">
-                    <a href="cart.html" class="cart">
-                        <ion-icon name="cart-outline" class="cart-items"></ion-icon>
-                    </a>
-                    <a href="login.html" class="login">Log In</a>
-                    <a href="sign-up.html"><button class="btn signUp">Sign-Up</button></a>
-                </div>
-            </div>
-            <a href="cart.html" class="cart-mobile">
-                <ion-icon name="cart-outline" class="cart-items-mobile"></ion-icon>
+          <div class="end">
+            <a href="cart.html" class="cart">
+              <ion-icon name="cart-outline" class="cart-items"></ion-icon>
             </a>
-            <ion-icon name="close-outline" class="close"></ion-icon>
-        </nav>
+            <a href="login.html" class="login">Log In</a>
+            <a href="sign-up.html"
+              ><button class="btn signUp">Sign-Up</button></a
+            >
+          </div>
+        </div>
+        <a href="cart.html" class="cart-mobile">
+          <ion-icon name="cart-outline" class="cart-items-mobile"></ion-icon>
+        </a>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </nav>
 
-        <section class="hero">
-            <div class="container">
-                <div class="text-header">
-                    <h1 class="title">Produk Terbaru Dan Harga Terbaik, Hanya Di <span class="red">Hannshop</span></h1>
-                    <p class="sm">nikmati pengalaman belanja online yang mudah dan cepat dengan berbagai pilihan produk
-                        terbaru dan harga terbaik hanya di Hannshop Kami. Dapatkan promo
-                        menarik hanya dengan beberapa klik saja!</p>
-                </div>
-            </div>
+      <section class="hero">
+        <div class="container">
+          <div class="text-header">
+            <h1 class="title">
+              Produk Terbaru Dan Harga Terbaik, Hanya Di
+              <span class="red">Hannshop</span>
+            </h1>
+            <p class="sm">
+              nikmati pengalaman belanja online yang mudah dan cepat dengan
+              berbagai pilihan produk terbaru dan harga terbaik hanya di
+              Hannshop Kami. Dapatkan promo menarik hanya dengan beberapa klik
+              saja!
+            </p>
+          </div>
+        </div>
 
-            <div class="start-component">
-                <a href="#produk" class="start-btn">
-                    <p>Mulai Belanja!</p>
-                    <ion-icon name="arrow-down-outline" class="panah"></ion-icon>
-                </a>
-            </div>
-
-        </section>
-
+        <div class="start-component">
+          <a href="#belanja" class="start-btn">
+            <p>Mulai Belanja!</p>
+            <ion-icon name="arrow-down-outline" class="panah"></ion-icon>
+          </a>
+        </div>
+      </section>
     </header>
 
+    <!-- Headers end -->
+
+    <!-- Features Category Start -->
+
+    <section class="categories" id="belanja">
+      <div class="small-container">
+        <h1 class="title">Produk Terbaru</h1>
+        <div class="row">
+          <div class="col-3">
+            <img src="./images/product-1.webp" alt="" />
+            <!-- Overlay Card Hover Start -->
+            <div class="overlay">
+              <div class="name-product">
+                <div class="btn-price">
+                  <button class="btn">
+                    Keranjang <span><i class="fas fa-plus"></i></span>
+                  </button>
+                  <button class="btn">
+                    Beli <span><i class="fas fa-shopping-cart"></i></span>
+                  </button>
+                </div>
+                <div class="name-price">
+                  <p>Men's Clothing</p>
+                  <h5>Mens Casual Premium Slim Fit T-Shirts</h5>
+                  <p>$22.3</p>
+                </div>
+              </div>
+            </div>
+            <!-- Overlay Card Hover End-->
+          </div>
+          <div class="col-3">
+            <img src="./images/product-5.webp" alt="" />
+             <!-- Overlay Card Hover Start -->
+             <div class="overlay">
+                <div class="name-product">
+                  <div class="btn-price">
+                    <button class="btn">
+                      Keranjang <span><i class="fas fa-plus"></i></span>
+                    </button>
+                    <button class="btn">
+                      Beli <span><i class="fas fa-shopping-cart"></i></span>
+                    </button>
+                  </div>
+                  <div class="name-price">
+                    <p>Electronict</p>
+                    <h5>Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</h5>
+                    <p>$599</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Overlay Card Hover End-->
+          </div>
+          <div class="col-3">
+            <img src="./images/product-4.webp" alt="" />
+             <!-- Overlay Card Hover Start -->
+             <div class="overlay">
+                <div class="name-product">
+                  <div class="btn-price">
+                    <button class="btn">
+                      Keranjang <span><i class="fas fa-plus"></i></span>
+                    </button>
+                    <button class="btn">
+                      Beli <span><i class="fas fa-shopping-cart"></i></span>
+                    </button>
+                  </div>
+                  <div class="name-price">
+                    <p>Jewelery</p>
+                    <h5>White Gold Plated Princess</h5>
+                    <p>$9.99</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Overlay Card Hover End-->
+          </div>
+        </div>
+      </div>
+    </section>
 
 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-</body>
-
+    <!-- Features Category End -->
+  </body>
 </html>
